@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.didiglobal.booster:booster-android-instrument-webview:1.5.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.didiglobal.booster/booster-android-instrument-webview/1.5.1/6d11d07b45bc33a78c708bf4b44a2806b76f4db7/booster-android-instrument-webview-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.didiglobal.booster/booster-android-instrument-webview/1.5.1/dba7f2964db72c6d1d7b4e28790a7d2978855ee8/booster-android-instrument-webview-1.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.didiglobal.booster/booster-android-instrument-webview/1.5.1/d425f64672d71e1a96741eaefaa3819e3234396c/booster-android-instrument-webview-1.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.blade.activity.tailoring.bin_Activity"
+    tools:ignore="HardcodedText">
+
+    <com.isseiaoki.simplecropview.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        custom:scv_crop_mode="fit_image" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:background="@color/divider" />
+
+    <HorizontalScrollView
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/windowBackground"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_xsmall"
+            android:paddingRight="@dimen/spacing_xsmall">
+
+            <Button
+                android:id="@+id/buttonFitImage"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_xsmall"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="适合的图" />
+
+            <Button
+                android:id="@+id/button1_1"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_xsmall"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="正方形" />
+
+            <Button
+                android:id="@+id/button3_4"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_xsmall"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="3:4" />
+
+            <Button
+                android:id="@+id/button4_3"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_xsmall"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="4:3" />
+
+            <Button
+                android:id="@+id/button9_16"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_xsmall"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="9:16" />
+
+            <Button
+                android:id="@+id/button16_9"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_xsmall"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="16:9" />
+
+            <Button
+                android:id="@+id/buttonCustom"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_small"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="7:5" />
+
+            <Button
+                android:id="@+id/buttonFree"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_xsmall"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="自由" />
+
+            <Button
+                android:id="@+id/buttonCircle"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_xsmall"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="圆角" />
+
+            <Button
+                android:id="@+id/buttonShowCircleButCropAsSquare"
+                style="@style/AppTheme.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/spacing_xsmall"
+                android:padding="@dimen/spacing_xsmall"
+                android:text="圆角正方形" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/windowBackground"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonPickImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/spacing"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/spacing"
+            android:src="@drawable/ic_photo_library_black_24dp"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonRotateLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/spacing"
+                android:src="@drawable/ic_rotate_left_black_24dp"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/buttonRotateRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/spacing"
+                android:src="@drawable/ic_rotate_right_black_24dp"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/buttonDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="16dp"
+            android:src="@drawable/ic_done_black_24dp"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</LinearLayout>

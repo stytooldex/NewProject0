@@ -1,0 +1,64 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.plugin_version = "0.1.4"
+    ext.booster_version = '1.5.1'
+    ext.kotlin_version = '1.3.71'
+    ext.latestAboutLibsRelease = '8.1.0'
+    ext.debug = gradle.startParameter.taskNames.any { it.contains('debug') || it.contains('Debug') }
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://oss.sonatype.org/content/repositories/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        classpath 'com.github.megatronking.stringfog:gradle-plugin:2.2.1'
+        // 选用加解密算法库，默认实现了xor和aes-cbc两种简单算法，也可以使用自己的加解密库。
+        classpath 'com.github.megatronking.stringfog:xor:1.1.0'
+        // NOTE: Do not place your com.example.blade.application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.17'
+
+        classpath "com.didiglobal.booster:booster-gradle-plugin:$booster_version"
+        if (!debug) {
+            classpath "com.didiglobal.booster:booster-transform-thread:$booster_version"//多线程优化
+            classpath "com.didiglobal.booster:booster-transform-webview:$booster_version"//WebView 预加载
+            classpath "com.didiglobal.booster:booster-transform-shared-preferences:$booster_version"//SharedPreferences 优化
+            classpath "com.didiglobal.booster:booster-task-resource-deredundancy:$booster_version"//去冗余资源
+            //classpath "com.didiglobal.booster:booster-transform-r-inline:$booster_version"//资源索引内联
+            classpath "com.didiglobal.booster:booster-transform-finalizer-watchdog-daemon:$booster_version"//修复 finalizer 导致的 TimeoutException
+            classpath "com.didiglobal.booster:booster-transform-media-player:$booster_version"//修复 MediaPlayer 崩溃
+            classpath "com.didiglobal.booster:booster-transform-res-check:$booster_version"//检查覆盖安装导致的 Resources 和 Assets 未加载的 Bug
+            classpath "com.didiglobal.booster:booster-transform-toast:$booster_version"//修复 Toast 在 Android 7.1 上的 Bug
+            classpath "com.didiglobal.booster:booster-transform-activity-thread:$booster_version"//处理系统 Crash
+            classpath "com.didiglobal.booster:booster-task-compression-cwebp:$booster_version"//采用 cwebp 对资源进行压缩
+        }
+
+        /* classpath "com.bytedance.android.byteX:base-plugin:${plugin_version}"
+         classpath "com.bytedance.android.byteX:access-inline-plugin:${plugin_version}"//access方法内联
+         classpath "com.bytedance.android.byteX:shrink-r-plugin:${plugin_version}"//R文件瘦身和无用资源检查
+         classpath "com.bytedance.android.byteX:closeable-check-plugin:${plugin_version}"//文件流的close检查
+         classpath "com.bytedance.android.byteX:const-inline-plugin:${plugin_version}"//常量内联
+         classpath "com.bytedance.android.byteX:field-assign-opt-plugin:${plugin_version}"//优化多余赋值指令
+         classpath "com.bytedance.android.byteX:getter-setter-inline-plugin:${plugin_version}"//getter和setter方法内联
+         classpath "com.bytedance.android.byteX:method-call-opt-plugin:${plugin_version}"//干净地删除某些方法调用*/
+        classpath "com.mikepenz.aboutlibraries.plugin:aboutlibraries-plugin:${latestAboutLibsRelease}"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'http://jitpack.io' }
+        //maven { url 'https://oss.sonatype.org/content/repositories/public' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

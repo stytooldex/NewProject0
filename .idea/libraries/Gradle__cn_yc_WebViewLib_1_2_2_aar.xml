@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.yc:WebViewLib:1.2.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/492154da0ab7ccfae38c4f2371da2200/jetified-WebViewLib-1.2.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/492154da0ab7ccfae38c4f2371da2200/jetified-WebViewLib-1.2.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/492154da0ab7ccfae38c4f2371da2200/jetified-WebViewLib-1.2.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/492154da0ab7ccfae38c4f2371da2200/jetified-WebViewLib-1.2.2/jars/libs/tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.yc/WebViewLib/1.2.2/bf5b9754f98566878654a6eb78272acce43ca095/WebViewLib-1.2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.yc/WebViewLib/1.2.2/3c2b21294cee4270eadc47ec52c152ca07b5c050/WebViewLib-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

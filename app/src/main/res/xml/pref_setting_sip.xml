@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:key="setting_kt">
+
+
+    <androidx.preference.PreferenceCategory android:title="满净化">
+
+        <SwitchPreferenceCompat
+            android:key="setting_1"
+            android:title="去除字体" />
+
+        <SwitchPreferenceCompat
+            android:key="setting_2"
+            android:title="去除挂件" />
+
+        <SwitchPreferenceCompat
+            android:key="setting_4"
+            android:title="去除字体特效" />
+        <SwitchPreferenceCompat
+            android:key="setting_6_2"
+            android:summary="方法适用于QQ7.x及以下版本"
+            android:title="去除聊天框关键词表情推荐" />
+        <SwitchPreferenceCompat
+            android:key="setting_6"
+            android:summary="适用于QQ8.0及以上版本"
+            android:title="去除聊天框关键词表情推荐" />
+        <SwitchPreferenceCompat
+            android:key="setting_7"
+            android:title="去除群内“怼图”标志" />
+        <SwitchPreferenceCompat
+            android:key="setting_8"
+            android:title="去除群内送礼动画" />
+        <SwitchPreferenceCompat
+            android:key="setting_9"
+            android:title="去除群内SVIP入场提示" />
+        <SwitchPreferenceCompat
+            android:key="setting_10"
+            android:title="去除群内群头衔彩色昵称" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="ROOT">
+        <SwitchPreferenceCompat
+            android:key="setting_5_0"
+            android:title="去除网易云音乐启动广告" />
+
+        <SwitchPreferenceCompat
+            android:key="setting_11"
+            android:title="去除气泡和挂件" />
+        <SwitchPreferenceCompat
+            android:key="setting_12"
+            android:title="去除 好友 个人主页漂浮" />
+
+        <SwitchPreferenceCompat
+            android:key="setting_15"
+            android:title="抖音去广告" />
+
+        <SwitchPreferenceCompat
+            android:key="setting_16"
+            android:title="抖音去除更新" />
+
+
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="测试功能">
+
+        <SwitchPreferenceCompat
+            android:key="setting_13"
+            android:summary="原理（Android/data/*）"
+            android:title="禁止王者荣耀" />
+        <SwitchPreferenceCompat
+            android:key="setting_14"
+            android:summary="原理（Android/data/*）"
+            android:title="禁止和平精英" />
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

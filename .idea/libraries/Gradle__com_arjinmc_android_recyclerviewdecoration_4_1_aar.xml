@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.arjinmc.android:recyclerviewdecoration:4.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d73aa45ba4c82209b6c42f58c5bf614c/jetified-recyclerviewdecoration-4.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d73aa45ba4c82209b6c42f58c5bf614c/jetified-recyclerviewdecoration-4.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arjinmc.android/recyclerviewdecoration/4.1/509143a1a6a4c0ea21f066584221f1398a4b6717/recyclerviewdecoration-4.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.arjinmc.android/recyclerviewdecoration/4.1/6b31cc5d4f04b0de389180269b9c49a365405937/recyclerviewdecoration-4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.didiglobal.booster:booster-android-instrument-finalizer-watchdog-daemon:1.5.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.didiglobal.booster/booster-android-instrument-finalizer-watchdog-daemon/1.5.1/902cfe8ecf8e00c27991d289d6eda588df69c36a/booster-android-instrument-finalizer-watchdog-daemon-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.didiglobal.booster/booster-android-instrument-finalizer-watchdog-daemon/1.5.1/47e2e0fb208b0f82c347b309910bac3f58760199/booster-android-instrument-finalizer-watchdog-daemon-1.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.didiglobal.booster/booster-android-instrument-finalizer-watchdog-daemon/1.5.1/ff09ee364b9e1fd690f59c01d67b5c3bde4ea047/booster-android-instrument-finalizer-watchdog-daemon-1.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

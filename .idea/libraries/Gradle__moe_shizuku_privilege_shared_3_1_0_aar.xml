@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: moe.shizuku.privilege:shared:3.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0bdd7539a5f4d9727d34ca9b2e12b38/jetified-shared-3.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0bdd7539a5f4d9727d34ca9b2e12b38/jetified-shared-3.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/moe.shizuku.privilege/shared/3.1.0/b2cf43d12852fb96ee9e151444b4e473c407da06/shared-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/moe.shizuku.privilege/shared/3.1.0/fe82eb5b0e4ebac61614c83e0c69ab3e80357848/shared-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

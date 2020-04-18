@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jaredrummler:android-shell:1.0.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaredrummler/android-shell/1.0.0/6bae7d88af956fc0b9d83bb30dfbc8a03bee0dba/android-shell-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaredrummler/android-shell/1.0.0/69bbd302448efc8ca101199884f963c2c5ed954d/android-shell-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaredrummler/android-shell/1.0.0/c6ab129f548195c973c94c7e7e4c59e15f54cfd4/android-shell-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

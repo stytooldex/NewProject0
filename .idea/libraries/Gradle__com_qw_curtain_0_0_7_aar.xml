@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.qw:curtain:0.0.7@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f00fc28d5d3121dbffe6cfe2b28ecd8/jetified-curtain-0.0.7/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f00fc28d5d3121dbffe6cfe2b28ecd8/jetified-curtain-0.0.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f00fc28d5d3121dbffe6cfe2b28ecd8/jetified-curtain-0.0.7/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.qw/curtain/0.0.7/1308717de58f7e16b89a171dc60f61a6efa7faa0/curtain-0.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.qw/curtain/0.0.7/2c241de357837f0c07acf08d6fb3a8c4469f3f16/curtain-0.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

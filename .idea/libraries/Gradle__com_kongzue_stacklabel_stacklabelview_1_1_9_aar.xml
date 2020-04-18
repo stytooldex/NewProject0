@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kongzue.stacklabel:stacklabelview:1.1.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/11afc34af89f30d079c3b512bb971f20/jetified-stacklabelview-1.1.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/11afc34af89f30d079c3b512bb971f20/jetified-stacklabelview-1.1.9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kongzue.stacklabel/stacklabelview/1.1.9/38fefbb2bde9c791a636337c08e8ac38856ffa50/stacklabelview-1.1.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

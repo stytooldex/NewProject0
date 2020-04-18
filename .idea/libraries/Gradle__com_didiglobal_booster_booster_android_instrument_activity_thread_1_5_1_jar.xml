@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.didiglobal.booster:booster-android-instrument-activity-thread:1.5.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.didiglobal.booster/booster-android-instrument-activity-thread/1.5.1/7e7a1964c0ba4bd30ef7efca21d8925e4e9259da/booster-android-instrument-activity-thread-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.didiglobal.booster/booster-android-instrument-activity-thread/1.5.1/9b46b8c938f246571138cc506faca5e10db5bcf/booster-android-instrument-activity-thread-1.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.didiglobal.booster/booster-android-instrument-activity-thread/1.5.1/eb6f978593764bd1b200aadb24e9f75fb9397e63/booster-android-instrument-activity-thread-1.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

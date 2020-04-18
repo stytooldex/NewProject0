@@ -1,0 +1,71 @@
+<config>
+    <input>
+        <dir in="${classesRoot}" out="${classesRoot}-obfuscated" />
+        <!-- Kotlin support -->
+        <dir in="${kotlinRoot}" out="${kotlinRoot}-obfuscated" />
+    </input>
+
+    <classpath>
+        <jar name="${androidJar}" />
+        <jar name="${classpathJars}" />
+    </classpath>
+
+    <keep-names>
+        <class template="public class * instanceof android.app.Activity">
+            <method template="public void *(android.view.View)" />
+        </class>
+        <class template="public class * instanceof android.view.View">
+            <method template="void set*(**)" />
+            <method template="get*()" />
+        </class>
+        <class template="class * extends java.lang.Enum">
+            <method template="values()" />
+            <method template="valueOf(java.lang.String)" />
+        </class>
+        <class template="class * implements android.os.Parcelable">
+            <field template="public static final android.os.Parcelable*Creator *" />
+        </class>
+        <class template="class *.R*">
+            <field template="public static *" />
+        </class>
+        <class template="public class * instanceof android.app.Application" />
+        <class template="public class * instanceof android.app.Service" />
+        <class template="public class * instanceof android.content.BroadcastReceiver" />
+        <class template="public class * instanceof android.content.ContentProvider" />
+        <class template="public class * instanceof android.app.backup.BackupAgentHelper" />
+        <class template="public class * instanceof android.preference.Preference" />
+        <class template="public class com.android.vending.licensing.ILicensingService" />
+        <class template="public class com.google.android.vending.licensing.ILicensingService" />
+    </keep-names>
+
+    <!--字符串加密类型-->
+    <property name="string-encryption-type" apply2class="class com.example.blade.*" value="fast" />
+    <!--控制-流混淆-->
+    <property name="control-flow-obfuscation" apply2class="class com.example.blade.*"
+        value="enable" />
+
+    <!-- 广泛流动混淆 -->
+    <property name="extensive-flow-obfuscation" apply2class="class com.example.blade.*"
+        value="maximum" />
+    <!--重命名属性-->
+    <property name="default-package" value="" />
+    <!--绝对所有重命名的类都将移至默认包-->
+    <property name="force-default-package" value="enable" />
+    <!--局部变量命名-->
+    <property name="local-variables-naming" value="single-name" />
+    <!--行号-->
+    <property name="line-numbers" value="remove" />
+    <!--泛型-->
+    <property name="generics" apply2class="class com.example.blade.*" value="keep" />
+    <!-- 内部类 -->
+    <property name="inner-classes" apply2class="class com.example.blade.*" value="remove" />
+    <!-- 合成方法 -->
+    <property name="synthetize-methods" apply2class="class com.example.blade.*" value="all" />
+    <!-- 所有字段都将标记为合成 -->
+    <property name="synthetize-fields" apply2class="class com.example.blade.*" value="all" />
+    <!-- 将删除混淆类中的toString -->
+    <property name="remove-toString" apply2class="class com.example.blade.*" value="enable" />
+    <!-- 唯一重命名 -->
+    <property name="unique-renaming" value="enable" />
+
+</config>

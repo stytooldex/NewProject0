@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionbar_share"
+        android:title="@string/actionbar_webview_share" />
+
+    <item
+        android:id="@+id/actionbar_cope"
+        android:title="@string/actionbar_webview_cope" />
+
+
+    <item
+        android:id="@+id/actionbar_webview_refresh"
+
+        android:title="@string/actionbar_webview_refresh" />
+
+    <item
+        android:id="@+id/actionbar_open"
+        android:title="@string/actionbar_webview_open" />
+
+</menu>

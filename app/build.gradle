@@ -1,0 +1,248 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'stringfog'
+apply plugin: 'AndResGuard'
+apply plugin: 'com.didiglobal.booster'
+if (!debug) {
+    apply plugin: 'com.mikepenz.aboutlibraries.plugin'
+}
+android {
+    compileSdkVersion 29
+    //buildToolsVersion "29.0.3"
+  
+    defaultConfig {
+        applicationId "com.example.blade"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 5
+        versionName "${android.defaultConfig.versionCode}.0-${releaseTime()}"
+        resConfigs "zh-rCN"
+        //testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    //D:\RmDownloads\platform-tools\adb.exe shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
+    // reboot -p
+    // reboot
+    //D:\RmDownloads\platform-tools\adb shell am start  -W  -n com.tencent.mm/.plugin.setting.ui.setting.SettingRedesign
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
+            applicationVariants.all { variant ->
+                //variant.javaCompileProvider.get().doLast {
+                //   run1(variant)
+                //}
+                variant.outputs.all {
+                    outputFileName = "Blade-v${variant.versionName}-${releaseTime()}.apk"
+                }
+            }
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    /*applicationVariants.all { variant ->
+        variant.javaCompileProvider.get().doLast {
+            //run1(variant)
+        }
+
+    }*/
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'com.blankj:utilcodex:1.27.6'
+
+    implementation 'androidx.preference:preference:1.1.0'
+    //
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.3'
+    //https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+    //
+    implementation 'cn.yc:WebViewLib:1.2.2'
+    //https://github.com/yangchong211/YCWebView
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.11.0'
+    //implementation 'jp.wasabeef:glide-transformations:4.1.0'
+    //https://github.com/bumptech/glide
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    // 查看大图
+    implementation 'com.github.SherlockGougou:BigImageViewPager:androidx-5.0.6'
+    //https://github.com/SherlockGougou/BigImageViewPager
+    //shell
+    implementation 'com.jaredrummler:android-shell:1.0.0'
+    //
+    implementation 'com.github.princekin-f:EasyFloat:1.3.1'
+    //https://github.com/princekin-f/EasyFloat
+    //
+    //implementation 'com.youngfeng.android:snake-androidx:0.4.1'
+    //https://github.com/yuanhoujun/Snake
+    //annotationProcessor 'com.youngfeng.android:snake-compiler-androidx:0.4.1'
+    //
+    implementation 'com.lahm.library:easy-protector-release:1.1.1'
+    //https://github.com/lamster2018/EasyProtector
+    implementation 'com.github.gayanvoice:android-animations:1.0.2'
+    //implementation 'com.github.gayanvoice:android-animations:1.0.2'
+
+    //implementation 'com.plattysoft.leonids:LeonidsLib:1.3.2'
+    implementation 'com.github.florent37:viewanimator:1.1.1'
+    //https://github.com/florent37/ViewAnimator
+    compileOnly 'de.robv.android.xposed:api:53'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.4'
+    //https://github.com/Kotlin/kotlinx.coroutines/releases
+    //
+    implementation('com.github.niorgai:StatusBarCompat:2.3.3', {
+        exclude group: 'androidx.appcompat:appcompat'
+        exclude group: 'com.google.android.material:material'
+    })
+    //https://github.com/niorgai/StatusBarCompat
+    //
+    implementation 'com.zhihu.android:matisse:0.5.3-beta3'
+    //https://github.com/zhihu/Matisse/releases
+
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+    implementation 'com.afollestad.material-dialogs:input:3.3.0'
+    implementation 'com.afollestad.material-dialogs:files:3.3.0'
+    implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
+    implementation 'com.afollestad.material-dialogs:bottomsheets:3.3.0'
+    //https://github.com/afollestad/material-dialogs/blob/master/documentation/CORE.md
+
+    //implementation 'com.xw.repo:bubbleseekbar:3.20-lite'
+    //https://github.com/woxingxiao/BubbleSeekBar/blob/master/README_zh.md
+
+    // Material Dialog Library
+    implementation 'com.shreyaspatil:MaterialDialog:2.1'
+    //https://github.com/PatilShreyas/MaterialDialog-Android
+
+    implementation 'com.qw:curtain:0.0.7'
+    //https://github.com/soulqw/Curtain
+
+    // 这里要和上面选用的加解密算法库一致，用于运行时解密。
+    implementation 'com.github.megatronking.stringfog:xor:1.1.0'
+    //
+    implementation 'com.jaredrummler:android-shell:1.0.0'
+
+    implementation 'com.bitvale:switcher:1.0.9'
+    //https://github.com/bitvale/Switcher
+    implementation 'com.github.QuadFlask:colorpicker:0.0.15'
+    //implementation 'hanks.xyz:htextview-library:0.1.5'
+
+    implementation 'me.grantland:autofittextview:0.2.1'
+
+    //https://github.com/mikepenz/AboutLibraries/blob/develop/README.md
+    implementation "com.mikepenz:aboutlibraries-core:${latestAboutLibsRelease}"
+    implementation "com.mikepenz:aboutlibraries:${latestAboutLibsRelease}"
+
+    implementation 'com.kongzue.stacklabel:stacklabelview:1.1.9'
+    //https://github.com/kongzue/StackLabel
+
+    implementation 'moe.shizuku.privilege:api:3.1.0'
+
+    implementation 'me.weishu:free_reflection:2.2.0'
+
+    implementation 'com.arjinmc.android:recyclerviewdecoration:4.1'
+
+    implementation 'com.isseiaoki:simplecropview:1.1.8'
+}
+
+stringfog {
+    // 这是加解密key，可以自由定义。
+    key '2284467793'
+    // 开关
+    enable false
+    // 加解密库的实现类路径，需和上面配置的加解密算法库一致。
+    implementation 'com.github.megatronking.stringfog.xor.StringFogImpl'
+    // 指定需加密的代码包路径，可配置多个，未指定将默认全部加密。
+    fogPackages = ['com.example.blade']
+}
+
+def run1(variant) {
+    copy {
+        from "$projectDir/allatori.xml"
+        into "$buildDir/intermediates/classes/"
+        expand(classesRoot: variant.javaCompileProvider.get().destinationDir,
+                kotlinRoot: "${buildDir}/tmp/kotlin-classes/${variant.name}",
+                androidJar: "${android.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar",
+                classpathJars: variant.javaCompileProvider.get().classpath.getAsPath(),
+                logFile: "allatori-log-${variant.name}.xml")
+        rename('allatori.xml', "allatori-${variant.name}.xml")
+    }
+
+    new File("${variant.javaCompileProvider.get().destinationDir}-obfuscated").deleteDir()
+    javaexec {
+        main = 'com.allatori.Obfuscate'
+        classpath = files("$rootDir/allatori/allatori.jar")
+        args "$buildDir/intermediates/classes/allatori-${variant.name}.xml"
+    }
+    new File("${variant.javaCompileProvider.get().destinationDir}").deleteDir()
+    new File("${variant.javaCompileProvider.get().destinationDir}-obfuscated").renameTo(new File("${variant.javaCompileProvider.get().destinationDir}"))
+
+    // Kotlin support
+    new File("${buildDir}/tmp/kotlin-classes/${variant.name}").deleteDir()
+    new File("${buildDir}/tmp/kotlin-classes/${variant.name}-obfuscated").renameTo(new File("${buildDir}/tmp/kotlin-classes/${variant.name}"))
+}
+
+static def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+andResGuard {
+
+    // mappingFile = file("./resource_mapping.txt")
+    mappingFile = null
+    use7zip = true
+    useSign = true
+    // 打开这个开关，会keep住所有资源的原始路径，只混淆资源的名字
+    keepRoot = false
+    // 设置这个值，会把arsc name列混淆成相同的名字，减少string常量池的大小
+    fixedResName = "arg"
+    // 打开这个开关会合并所有哈希值相同的资源，但请不要过度依赖这个功能去除去冗余资源
+    mergeDuplicatedRes = true
+    whiteList = [
+            "R.string.library_*",
+            "R.string.license_*",
+            "R.string.define_*",
+    ]
+    compressFilePattern = [
+            "*.png",
+            "*.jpg",
+            "*.jpeg",
+            "*.gif",
+    ]
+    sevenzip {
+        artifact = 'com.tencent.mm:SevenZip:1.2.17'
+        //path = "/usr/local/bin/7za"
+    }
+    /**
+     * 可选： 如果不设置则会默认覆盖assemble输出的apk
+     **/
+    finalApkBackupPath = "C:/Users/Nico/Desktop/Blade-v${android.defaultConfig.versionName}-${releaseTime()}final.apk"
+
+    /**
+     * 可选: 指定v1签名时生成jar文件的摘要算法
+     * 默认值为“SHA-1”
+     **/
+    // digestalg = "SHA-256"
+}

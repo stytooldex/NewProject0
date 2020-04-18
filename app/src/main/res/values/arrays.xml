@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="socialNetworks">
+        <item>引擎1『默认』</item>
+        <item>引擎1『接口2』</item>
+        <item>引擎1『占位字符处理90–100%通过 』</item>
+    </string-array>
+    <string-array name="languages_wz">
+        <item>c语言</item>
+        <item>java </item>
+        <item>php</item>
+        <item>xml</item>
+        <item>html</item>
+    </string-array>
+</resources>

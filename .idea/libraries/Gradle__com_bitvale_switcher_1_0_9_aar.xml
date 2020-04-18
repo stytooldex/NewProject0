@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bitvale:switcher:1.0.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ec418c5f6253d3da755550731d15d0cf/jetified-switcher-1.0.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ec418c5f6253d3da755550731d15d0cf/jetified-switcher-1.0.9/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bitvale/switcher/1.0.9/206a01d82899daa705e1de2d4dc6aecb2ee07c30/switcher-1.0.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bitvale/switcher/1.0.9/66d022ec886ced296adbaef729cca3a79733091/switcher-1.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

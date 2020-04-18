@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/actions_Rename"
+        android:title="重命名" />
+    <item
+        android:id="@+id/actions_delete"
+        android:title="删除" />
+    <item
+        android:id="@+id/actions_share"
+        android:title="分享" />
+    <item
+        android:id="@+id/actions_Compressed_folder"
+        android:title="打包分享『压缩文件夹』" />
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.blade.activity.search_mik.SearchActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="You search for"
+        android:inputType="text"
+        tools:ignore="Autofill,HardcodedText,LabelFor" />
+
+    <com.kongzue.stacklabelview.StackLabel
+        android:id="@+id/stackLabelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemMargin="8dp"
+        app:labels="搜索网址,shell命令,搜索apk"
+        app:textColor="#e6000000"
+        app:textSize="12sp" />
+
+    <FrameLayout
+        android:id="@+id/frame_container_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
