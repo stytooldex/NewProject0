@@ -20,7 +20,7 @@ import java.util.ArrayList;
  * @author Nico
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
+ //s
     @StringRes
     private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_system, R.string.tab_text_qq, R.string.tab_text_mg, R.string.tab_text_file0};
     private final Context mContext;
